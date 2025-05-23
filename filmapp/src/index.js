@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './components/header';
-import Navigation from './components/navigation';
-import Main from './components/main';
-import Search from './components/search';
-import Footer from './components/footer';
-import reportWebVitals from './reportWebVitals';
+import ListGroup from './components/listgroup.js';
 import Base from './components/base.js';
-
+import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,16 +12,11 @@ root.render(
         <div className="col-md-3">
         </div>
         <div className="col-md-9">
-          <Header />
         </div>
       </div>
+      {/*<ListGroup names = {["Jon", "Harry", "Henry"]}></ListGroup>*/}
+      <Base/>
     </div>
-    {/*
-    <Main />
-    <Search/>
-    <Footer />
-    */}
-    <Base/>
   </React.StrictMode>
 );
 

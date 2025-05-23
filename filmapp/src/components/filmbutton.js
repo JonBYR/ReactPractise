@@ -3,13 +3,14 @@ import {films} from './../data/films.js';
 import Film from './film.js';
 import './../App.css';
 const FilmButton = (props) => {
-    const [film, setFilm] = useState('');
     const handleFilmClick = (name) => {
-        let filtered = films.filter((n) => n === name);
+        let filtered = films.filter((n) => n.Title === name);
         setFilm(filtered[0]);
     }
+    const [film, setFilm] = useState('');
     return (
         <>
+        {console.log("Film Button rendered")}
         <div style= {{
             padding: '50px',
             textAlign: 'center',
