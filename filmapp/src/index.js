@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import ListGroup from './components/listgroup.js';
 import Base from './components/base.js';
+import TerribleFilm from './components/terriblefilm.js';
 import reportWebVitals from './reportWebVitals';
+import Facts from './components/facts.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,6 +18,8 @@ root.render(
       </div>
       {/*<ListGroup names = {["Jon", "Harry", "Henry"]}></ListGroup>*/}
       <Base/>
+      <TerribleFilm/>
+      <Facts/>
     </div>
   </React.StrictMode>
 );
